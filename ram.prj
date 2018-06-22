@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/ram_1.vhd"
+vhdl work "ipcore_dir/ram_2.vhd"
+vhdl work "ipcore_dir/ram_3.vhd"
+vhdl work "ipcore_dir/ram_4.vhd"
+vhdl work "ram.vhd"

@@ -1,0 +1,111 @@
+V3 68
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ASM.vhd 2018/06/18.11:55:35 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/CompFila.vhd 2018/06/16.17:26:53 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/Contador.vhd 2018/06/16.17:15:46 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/Datos.vhd 2018/06/16.20:27:19 P.20131013
+EN work/Datos 1529199340 FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/Datos.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Datos/syn 1529199341 \
+      FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/Datos.vhd EN work/Datos 1529199340
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/memoria.vhd 2018/06/18.12:15:43 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_1.vhd 2018/06/18.03:33:40 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_2.vhd 2018/06/18.03:35:15 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_3.vhd 2018/06/18.03:37:42 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_4.vhd 2018/06/18.03:39:47 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/pruebas.vhd 2018/06/18.03:56:55 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd 2018/06/18.03:42:25 P.20131013
+FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/registro.vhd 2018/06/16.18:10:09 P.20131013
+EN work/registro_fila 1529190620 \
+      FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/registro.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/registro_fila/Behavioral 1529190621 \
+      FL C:/Users/Frank/Desktop/Micros/lamic/Lmic/registro.vhd \
+      EN work/registro_fila 1529190620
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd 2018/06/22.13:54:04 P.20131013
+EN work/ASM 1529693676 FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ASM/Behavioral 1529693677 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd EN work/ASM 1529693676 \
+      CP mem CP ram CP contador CP Banco_Comparadores
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Banco_Comparadores.vhd 2018/06/22.13:48:18 P.20131013
+EN work/Banco_Comparadores 1529693674 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Banco_Comparadores.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Banco_Comparadores/Behavioral 1529693675 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Banco_Comparadores.vhd \
+      EN work/Banco_Comparadores 1529693674 CP comparador_fila
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/CompFila.vhd 2018/06/22.13:47:20 P.20131013
+EN work/comparador_fila 1529693656 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/CompFila.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/comparador_fila/Behavioral 1529693657 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/CompFila.vhd \
+      EN work/comparador_fila 1529693656
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Contador.vhd 2018/06/20.17:08:49 P.20131013
+EN work/contador 1529693672 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Contador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/contador/Behavioral 1529693673 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Contador.vhd \
+      EN work/contador 1529693672
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/memoria.vhd 2018/06/22.12:56:16 P.20131013
+EN work/memoria 1529693666 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/memoria.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/memoria/memoria_a 1529693667 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/memoria.vhd \
+      EN work/memoria 1529693666
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_1.vhd 2018/06/22.13:18:36 P.20131013
+EN work/ram_1 1529693658 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram_1/ram_1_a 1529693659 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_1.vhd \
+      EN work/ram_1 1529693658
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_2.vhd 2018/06/22.13:20:11 P.20131013
+EN work/ram_2 1529693660 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_2.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram_2/ram_2_a 1529693661 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_2.vhd \
+      EN work/ram_2 1529693660
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_3.vhd 2018/06/22.13:21:51 P.20131013
+EN work/ram_3 1529693662 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_3.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram_3/ram_3_a 1529693663 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_3.vhd \
+      EN work/ram_3 1529693662
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_4.vhd 2018/06/22.13:23:17 P.20131013
+EN work/ram_4 1529693664 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram_4/ram_4_a 1529693665 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_4.vhd \
+      EN work/ram_4 1529693664
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd 2018/06/22.13:25:55 P.20131013
+EN work/mem 1529693668 FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mem/Behavioral 1529693669 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd EN work/mem 1529693668 \
+      CP memoria
+FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd 2018/06/22.13:24:56 P.20131013
+EN work/ram 1529693670 FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ram/Behavioral 1529693671 \
+      FL C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd EN work/ram 1529693670 \
+      CP ram_1 CP ram_2 CP ram_3 CP ram_4
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ASM.vhd" 2018/06/20.17:21:22 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/Contador.vhd" 2018/06/20.17:08:49 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ipcore_dir/memoria.vhd" 2018/06/18.12:15:43 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ipcore_dir/ram_1.vhd" 2018/06/18.03:33:40 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ipcore_dir/ram_2.vhd" 2018/06/18.03:35:15 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ipcore_dir/ram_3.vhd" 2018/06/18.03:37:42 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ipcore_dir/ram_4.vhd" 2018/06/18.03:39:47 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/pruebas.vhd" 2018/06/18.03:56:55 P.20131013
+FL "C:/Users/Juan Gomez/Desktop/lamic/Lmic/ram.vhd" 2018/06/19.22:39:53 P.20131013

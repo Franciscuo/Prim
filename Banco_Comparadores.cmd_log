@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Juan Gomez/Desktop/lamic/Lmic/Banco_Comparadores.xst" -ofn "C:/Users/Juan Gomez/Desktop/lamic/Lmic/Banco_Comparadores.syr" 
+vhdtdtfi -lib work CompFila.vhd -lib work Banco_Comparadores.vhd -prj Lmic -o Banco_Comparadores.spl -module Banco_Comparadores -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a Banco_Comparadores.spl {C:/Users/Juan Gomez/Desktop/lamic/Lmic/Banco_Comparadores.sym} 
+vhdtdtfi -prj Lmic -o "C:/Users/Juan Gomez/Desktop/lamic/Lmic/Banco_Comparadores.vhi" -module Banco_Comparadores -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CompFila.vhd -lib work Banco_Comparadores.vhd 

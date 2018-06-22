@@ -1,0 +1,382 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: ram.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ram.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ram"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : ram
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Gray
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+Setting FSM Encoding Algorithm to : Gray
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_1.vhd" in Library work.
+Architecture ram_1_a of Entity ram_1 is up to date.
+Compiling vhdl file "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_2.vhd" in Library work.
+Architecture ram_2_a of Entity ram_2 is up to date.
+Compiling vhdl file "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_3.vhd" in Library work.
+Architecture ram_3_a of Entity ram_3 is up to date.
+Compiling vhdl file "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ipcore_dir/ram_4.vhd" in Library work.
+Architecture ram_4_a of Entity ram_4 is up to date.
+Compiling vhdl file "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd" in Library work.
+Entity <ram> compiled.
+Entity <ram> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ram> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ram> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd" line 71: Instantiating black box module <ram_1>.
+WARNING:Xst:2211 - "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd" line 72: Instantiating black box module <ram_2>.
+WARNING:Xst:2211 - "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd" line 73: Instantiating black box module <ram_3>.
+WARNING:Xst:2211 - "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd" line 74: Instantiating black box module <ram_4>.
+Entity <ram> analyzed. Unit <ram> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ram>.
+    Related source file is "C:/Users/Frank/Desktop/Micros/lamic/Lmic/ram.vhd".
+Unit <ram> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ram_1.ngc>.
+Reading core <ipcore_dir/ram_2.ngc>.
+Reading core <ipcore_dir/ram_3.ngc>.
+Reading core <ipcore_dir/ram_4.ngc>.
+Loading core <ram_1> for timing and area information for instance <c1>.
+Loading core <ram_2> for timing and area information for instance <c2>.
+Loading core <ram_3> for timing and area information for instance <c3>.
+Loading core <ram_4> for timing and area information for instance <c4>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ram> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ram, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ram.ngr
+Top Level Output File Name         : ram
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 133
+
+Cell Usage :
+# FlipFlops/Latches                : 64
+#      FD                          : 64
+# RAMS                             : 32
+#      RAM16X1D                    : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 132
+#      IBUF                        : 68
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                       48  out of   5888     0%  
+ Number of Slice Flip Flops:             64  out of  11776     0%  
+ Number of 4 input LUTs:                 64  out of  11776     0%  
+    Number used as logic:                 0
+    Number used as RAMs:                 64
+ Number of IOs:                         133
+ Number of bonded IOBs:                 133  out of    372    35%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 96    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 2.376ns (Maximum Frequency: 420.875MHz)
+   Minimum input arrival time before clock: 3.808ns
+   Maximum output required time after clock: 6.644ns
+   Maximum combinational path delay: 8.076ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.376ns (frequency: 420.875MHz)
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Delay:               2.376ns (Levels of Logic = 0)
+  Source:            c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8 (RAM)
+  Destination:       c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8 to c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->SPO    2   1.677   0.447  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8 (spo<7>)
+     FD:D                      0.252          U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_7
+    ----------------------------------------
+    Total                      2.376ns (1.929ns logic, 0.447ns route)
+                                       (81.2% logic, 18.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 576 / 384
+-------------------------------------------------------------------------
+Offset:              3.808ns (Levels of Logic = 3)
+  Source:            a_1<0> (PAD)
+  Destination:       c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: a_1<0> to c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.849   1.252  a_1_0_IBUF (a_1_0_IBUF)
+     begin scope: 'c1'
+     RAM16X1D:A0->SPO      2   1.008   0.447  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1 (spo<0>)
+     FD:D                      0.252          U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/qspo_int_0
+    ----------------------------------------
+    Total                      3.808ns (2.109ns logic, 1.699ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              6.644ns (Levels of Logic = 2)
+  Source:            c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8 (RAM)
+  Destination:       spo_1<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: c1/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8 to spo_1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->SPO    2   1.677   0.447  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram8 (spo<7>)
+     end scope: 'c1'
+     OBUF:I->O                 4.520          spo_1_7_OBUF (spo_1<7>)
+    ----------------------------------------
+    Total                      6.644ns (6.197ns logic, 0.447ns route)
+                                       (93.3% logic, 6.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 256 / 64
+-------------------------------------------------------------------------
+Delay:               8.076ns (Levels of Logic = 4)
+  Source:            a_1<0> (PAD)
+  Destination:       spo_1<7> (PAD)
+
+  Data Path: a_1<0> to spo_1<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.849   1.252  a_1_0_IBUF (a_1_0_IBUF)
+     begin scope: 'c1'
+     RAM16X1D:A0->SPO      2   1.008   0.447  U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram1 (spo<0>)
+     end scope: 'c1'
+     OBUF:I->O                 4.520          spo_1_0_OBUF (spo_1<0>)
+    ----------------------------------------
+    Total                      8.076ns (6.377ns logic, 1.699ns route)
+                                       (79.0% logic, 21.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.99 secs
+ 
+--> 
+
+Total memory usage is 4534384 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

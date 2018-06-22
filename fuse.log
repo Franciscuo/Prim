@@ -1,0 +1,46 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM_isim_beh.exe -prj C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM_beh.prj work.ASM 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/memoria.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_1.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_2.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_3.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_4.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/CompFila.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Contador.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Banco_Comparadores.vhd" into library work
+Parsing VHDL file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling architecture behavioral of entity dist_mem_gen_v7_2 [\dist_mem_gen_v7_2("spartan3",6,...]
+Compiling architecture memoria_a of entity memoria [memoria_default]
+Compiling architecture behavioral of entity mem [mem_default]
+Compiling architecture behavioral of entity dist_mem_gen_v7_2 [\dist_mem_gen_v7_2("spartan3",4,...]
+Compiling architecture ram_1_a of entity ram_1 [ram_1_default]
+Compiling architecture behavioral of entity dist_mem_gen_v7_2 [\dist_mem_gen_v7_2("spartan3",4,...]
+Compiling architecture ram_2_a of entity ram_2 [ram_2_default]
+Compiling architecture behavioral of entity dist_mem_gen_v7_2 [\dist_mem_gen_v7_2("spartan3",4,...]
+Compiling architecture ram_3_a of entity ram_3 [ram_3_default]
+Compiling architecture behavioral of entity dist_mem_gen_v7_2 [\dist_mem_gen_v7_2("spartan3",4,...]
+Compiling architecture ram_4_a of entity ram_4 [ram_4_default]
+Compiling architecture behavioral of entity ram [ram_default]
+Compiling architecture behavioral of entity contador [contador_default]
+Compiling architecture behavioral of entity comparador_fila [comparador_fila_default]
+Compiling architecture behavioral of entity Banco_Comparadores [banco_comparadores_default]
+Compiling architecture behavioral of entity asm
+Time Resolution for simulation is 1ps.
+Waiting for 14 sub-compilation(s) to finish...
+Compiled 37 VHDL Units
+Built simulation executable C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM_isim_beh.exe
+Fuse Memory Usage: 40024 KB
+Fuse CPU Usage: 1015 ms

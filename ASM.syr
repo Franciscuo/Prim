@@ -1,0 +1,571 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ASM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ASM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ASM"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : ASM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Gray
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+Setting FSM Encoding Algorithm to : Gray
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/CompFila.vhd" in Library work.
+Architecture behavioral of Entity comparador_fila is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_1.vhd" in Library work.
+Architecture ram_1_a of Entity ram_1 is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_2.vhd" in Library work.
+Architecture ram_2_a of Entity ram_2 is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_3.vhd" in Library work.
+Architecture ram_3_a of Entity ram_3 is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/ram_4.vhd" in Library work.
+Architecture ram_4_a of Entity ram_4 is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ipcore_dir/memoria.vhd" in Library work.
+Architecture memoria_a of Entity memoria is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd" in Library work.
+Architecture behavioral of Entity mem is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd" in Library work.
+Architecture behavioral of Entity ram is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Contador.vhd" in Library work.
+Architecture behavioral of Entity contador is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Banco_Comparadores.vhd" in Library work.
+Architecture behavioral of Entity banco_comparadores is up to date.
+Compiling vhdl file "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd" in Library work.
+Entity <asm> compiled.
+Entity <asm> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ASM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ram> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <contador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Banco_Comparadores> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <comparador_fila> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ASM> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd" line 170: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <destino>, <peso>
+INFO:Xst:2679 - Register <in_ram_21> in unit <ASM> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in_ram_22> in unit <ASM> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in_ram_23> in unit <ASM> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <in_ram_24> in unit <ASM> has a constant value of 0000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <listo> in unit <ASM> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <sel> in unit <ASM> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <alfa> in unit <ASM> has a constant value of 00001 during circuit operation. The register is replaced by logic.
+Entity <ASM> analyzed. Unit <ASM> generated.
+
+Analyzing Entity <mem> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd" line 28: Instantiating black box module <memoria>.
+Entity <mem> analyzed. Unit <mem> generated.
+
+Analyzing Entity <ram> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd" line 71: Instantiating black box module <ram_1>.
+WARNING:Xst:2211 - "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd" line 72: Instantiating black box module <ram_2>.
+WARNING:Xst:2211 - "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd" line 73: Instantiating black box module <ram_3>.
+WARNING:Xst:2211 - "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd" line 74: Instantiating black box module <ram_4>.
+Entity <ram> analyzed. Unit <ram> generated.
+
+Analyzing Entity <contador> in library <work> (Architecture <behavioral>).
+Entity <contador> analyzed. Unit <contador> generated.
+
+Analyzing Entity <Banco_Comparadores> in library <work> (Architecture <behavioral>).
+Entity <Banco_Comparadores> analyzed. Unit <Banco_Comparadores> generated.
+
+Analyzing Entity <comparador_fila> in library <work> (Architecture <behavioral>).
+Entity <comparador_fila> analyzed. Unit <comparador_fila> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <contador>.
+    Related source file is "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Contador.vhd".
+Unit <contador> synthesized.
+
+
+Synthesizing Unit <comparador_fila>.
+    Related source file is "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/CompFila.vhd".
+    Found 6-bit register for signal <aux>.
+    Found 6-bit comparator greater for signal <comp$cmp_gt0000> created at line 32.
+    Found 3-bit register for signal <reg_jx>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <comparador_fila> synthesized.
+
+
+Synthesizing Unit <mem>.
+    Related source file is "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/pruebas.vhd".
+Unit <mem> synthesized.
+
+
+Synthesizing Unit <ram>.
+    Related source file is "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ram.vhd".
+Unit <ram> synthesized.
+
+
+Synthesizing Unit <Banco_Comparadores>.
+    Related source file is "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/Banco_Comparadores.vhd".
+Unit <Banco_Comparadores> synthesized.
+
+
+Synthesizing Unit <ASM>.
+    Related source file is "C:/Users/Frank/Downloads/lamic_2/lamic/Lmic/ASM.vhd".
+WARNING:Xst:646 - Signal <out_ram_24> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out_ram_23> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out_ram_22> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out_ram_21> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out_ram_14> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out_ram_13> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <out_ram_12> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <listo> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <j_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <j_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <j_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <j_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <j_0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <aux_4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <aux_3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <aux_2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <aux_1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <aux_0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State s8 is never reached in FSM <estado_actual>.
+INFO:Xst:1799 - State s9 is never reached in FSM <estado_actual>.
+    Found finite state machine <FSM_0> for signal <estado_actual>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 17                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s00                                            |
+    | Power Up State     | s00                                            |
+    | Encoding           | gray                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 6-bit latch for signal <aux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <in_ram_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <in_ram_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <in_ram_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <in_ram_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <we_ram_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <we_ram_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <we_ram_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <we_ram_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <din_ram_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <din_ram_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <din_ram_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <din_ram_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 6-bit latch for signal <in_rom>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit adder for signal <in_ram_14$add0000> created at line 238.
+    Found 6-bit adder for signal <in_rom$addsub0000> created at line 253.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <ASM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 10
+ 3-bit register                                        : 5
+ 6-bit register                                        : 5
+# Latches                                              : 14
+ 1-bit latch                                           : 4
+ 4-bit latch                                           : 4
+ 6-bit latch                                           : 6
+# Comparators                                          : 5
+ 6-bit comparator greater                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Optimizing FSM <estado_actual/FSM> on signal <estado_actual[1:4]> with gray encoding.
+------------------------
+ State      | Encoding
+------------------------
+ s00        | 0000
+ s0         | 0001
+ s1         | 0011
+ s2         | 0010
+ s3         | 0110
+ s4         | 0111
+ s5         | 0101
+ s6         | 0100
+ s7         | 1100
+ s8         | unreached
+ s9         | unreached
+ inicio_alg | 1101
+------------------------
+Reading core <ipcore_dir/memoria.ngc>.
+Reading core <ipcore_dir/ram_1.ngc>.
+Reading core <ipcore_dir/ram_2.ngc>.
+Reading core <ipcore_dir/ram_3.ngc>.
+Reading core <ipcore_dir/ram_4.ngc>.
+Loading core <memoria> for timing and area information for instance <c1>.
+Loading core <ram_1> for timing and area information for instance <c1>.
+Loading core <ram_2> for timing and area information for instance <c2>.
+Loading core <ram_3> for timing and area information for instance <c3>.
+Loading core <ram_4> for timing and area information for instance <c4>.
+WARNING:Xst:1290 - Hierarchical block <Contador_J> is unconnected in block <ASM>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Banco> is unconnected in block <ASM>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+# Latches                                              : 14
+ 1-bit latch                                           : 4
+ 4-bit latch                                           : 4
+ 6-bit latch                                           : 6
+# Comparators                                          : 5
+ 6-bit comparator greater                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <ASM>: instances <Banco/FILA_4>, <Banco/FILA_3> of unit <comparador_fila> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <ASM>: instances <Banco/FILA_4>, <Banco/FILA_2> of unit <comparador_fila> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <ASM>: instances <Banco/FILA_4>, <Banco/FILA_1> of unit <comparador_fila> are equivalent, second instance is removed
+
+Optimizing unit <ASM> ...
+
+Optimizing unit <comparador_fila> ...
+WARNING:Xst:2677 - Node <Banco/FILA_0/reg_jx_2> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/reg_jx_1> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/reg_jx_0> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/aux_5> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/aux_4> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/aux_3> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/aux_2> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/aux_1> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_0/aux_0> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/reg_jx_2> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/reg_jx_1> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/reg_jx_0> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/aux_5> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/aux_4> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/aux_3> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/aux_2> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/aux_1> of sequential type is unconnected in block <ASM>.
+WARNING:Xst:2677 - Node <Banco/FILA_4/aux_0> of sequential type is unconnected in block <ASM>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ASM, actual ratio is 1.
+FlipFlop estado_actual_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop estado_actual_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop estado_actual_FSM_FFd4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ASM.ngr
+Top Level Output File Name         : ASM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 103
+#      GND                         : 2
+#      LUT2                        : 2
+#      LUT3                        : 12
+#      LUT3_L                      : 2
+#      LUT4                        : 71
+#      MUXF5                       : 10
+#      MUXF6                       : 4
+# FlipFlops/Latches                : 112
+#      FD                          : 48
+#      FDC                         : 8
+#      LD                          : 56
+# RAMS                             : 24
+#      RAM16X1D                    : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 1
+#      IBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                       85  out of   5888     1%  
+ Number of Slice Flip Flops:            112  out of  11776     0%  
+ Number of 4 input LUTs:                135  out of  11776     1%  
+    Number used as logic:                87
+    Number used as RAMs:                 48
+ Number of IOs:                           3
+ Number of bonded IOBs:                   2  out of    372     0%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+we_ram_1_or0000(we_ram_1_or00001:O)                | NONE(*)(we_ram_1)      | 1     |
+we_ram_2_or0000(we_ram_2_or00001:O)                | NONE(*)(we_ram_2)      | 1     |
+we_ram_3_or0000(we_ram_3_or00002:O)                | NONE(*)(we_ram_3)      | 1     |
+we_ram_4_or0000(we_ram_4_or00002:O)                | NONE(*)(we_ram_4)      | 1     |
+in_ram_11_or0000(in_ram_11_or00001:O)              | NONE(*)(in_ram_11_0)   | 10    |
+in_ram_12_or0000(estado_actual_FSM_Out411:O)       | NONE(*)(in_ram_12_0)   | 10    |
+in_ram_13_or0000(in_ram_13_or00001:O)              | NONE(*)(in_ram_13_0)   | 10    |
+in_ram_14_or0000(in_ram_14_or00001:O)              | NONE(*)(in_ram_14_0)   | 10    |
+in_rom_or0000(in_rom_or00001:O)                    | NONE(*)(in_rom_0)      | 6     |
+estado_actual_cmp_eq0007(estado_actual_FSM_Out01:O)| NONE(*)(aux_0)         | 6     |
+clk                                                | BUFGP                  | 80    |
+---------------------------------------------------+------------------------+-------+
+(*) These 10 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.125ns (Maximum Frequency: 320.000MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.125ns (frequency: 320.000MHz)
+  Total number of paths / destination ports: 80 / 56
+-------------------------------------------------------------------------
+Delay:               3.125ns (Levels of Logic = 2)
+  Source:            estado_actual_FSM_FFd4_1 (FF)
+  Destination:       estado_actual_FSM_FFd2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: estado_actual_FSM_FFd4_1 to estado_actual_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.534  estado_actual_FSM_FFd4_1 (estado_actual_FSM_FFd4_1)
+     LUT4:I3->O            1   0.648   0.452  estado_actual_FSM_FFd2-In1 (N11)
+     LUT4:I2->O            2   0.648   0.000  estado_actual_FSM_FFd2-In (estado_actual_FSM_FFd2-In)
+     FDC:D                     0.252          estado_actual_FSM_FFd2
+    ----------------------------------------
+    Total                      3.125ns (2.139ns logic, 0.986ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.03 secs
+ 
+--> 
+
+Total memory usage is 4550664 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   61 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+
